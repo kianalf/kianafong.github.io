@@ -6,8 +6,10 @@ h1 {
   font-family: 'Titillium Web', sans-serif;
 }
 p {
-  color: red;
-  font-family: "Times New Roman", Times, serif;
+  color: #64A6BD;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 14px;
   border: 2px solid orange;
   padding: 30px;
+  margin: 50px;
 }
