@@ -1,6 +1,11 @@
 body {
   background-color: #F1EBDA;
 }
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
 h1 {
   color: #64A6BD;
   font-family: 'Titillium Web', sans-serif;
