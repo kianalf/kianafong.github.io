@@ -1,42 +1,19 @@
-body {
-  background-color: #F1EBDA;
-}
-ul {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-  background-color: #000000;
-}
-li {
-  float: left;
-}
-a {
-  display: block;
-  padding: 8px;
-  background-color: #dddddd;
-}
-h1 {
-  color: #64A6BD;
-  font-family: 'Titillium Web', sans-serif;
-  font-size: 40px;
-}
+    ul.navbar {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+      width: 200px;
+      background-color: #f1f1f1;
+    }
 
-h3 {
-  color: #64A6BD;
-  font-family: 'Titillium Web', sans-serif;
-  font-size: 25px;
-  border:2px solid #64A6BD;
-  padding:15px;
-}
+    ul.navbar li a {
+      display: block;
+      color: #000;
+      padding: 8px 16px;
+      text-decoration: none;
+    }
 
-p1 {
-  color: #64A6BD;
-  font-family: 'Open Sans', sans-serif;
-  font-size: 14px;
-}
-
-pre {
-  color: #64A6BD;
-  font-family: 'Open Sans', sans-serif;
-  font-size: 14px;
-}
+    ul.navbar li a:hover {
+      background-color: #555;
+      color: white;
+    }
