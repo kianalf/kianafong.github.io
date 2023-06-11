@@ -1,0 +1,162 @@
+:root {
+  --color-bg: #f0eec5;
+  --color-text-main: #000000;
+  --color-primary: #ffff00;
+  --wrapper-height: 87vh;
+  --image-max-width: 300px;
+  --image-margin: 3rem;
+  --font-family: "HK Grotesk";
+  --font-family-header: "HK Grotesk";
+}
+
+/* Basic page style resets */
+* {
+  box-sizing: border-box;
+}
+[hidden] {
+  display: none !important;
+}
+
+/* Import fonts */
+@font-face {
+  font-family: HK Grotesk;
+  src: url("https://cdn.glitch.me/605e2a51-d45f-4d87-a285-9410ad350515%2FHKGrotesk-Regular.otf?v=1603136326027")
+    format("opentype");
+}
+@font-face {
+  font-family: HK Grotesk;
+  font-weight: bold;
+  src: url("https://cdn.glitch.me/605e2a51-d45f-4d87-a285-9410ad350515%2FHKGrotesk-Bold.otf?v=1603136323437")
+    format("opentype");
+}
+
+/* NAVIGATION BAR*/
+body {
+  margin: 0;
+}
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  width: 25%;
+  background-color: #ffb68e;
+  position: fixed;
+  height: 100%;
+  overflow: auto;
+}
+
+li a {
+  display: block;
+  color: black;
+  padding: 8px 16px;
+  text-decoration: none;
+}
+
+li a.active {
+  background-color: #f49d6e;
+  color: white;
+}
+
+li a:hover:not(.active) {
+  background-color: #e78652;
+  color: white;
+}
+
+ul.navbar li.social {
+  float: right;
+}
+
+ul.navbar li.social a {
+  padding: 0;
+}
+
+ul.navbar li.social a img {
+  height: 20px; /* Adjust the height of social media icons */
+  margin-left: 10px; /* Adjust the spacing between social media icons */
+}
+
+/******************************************************************************
+END Glitch hello-app default styles
+******************************************************************************/
+
+body {
+  font-family: HK Grotesk;
+  background-color: var(--color-bg);
+}
+
+/* Page structure */
+.wrapper {
+  min-height: var(--wrapper-height);
+  display: grid;
+  place-items: center;
+  margin: 0 1rem;
+}
+.content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Button - Add it from the README instructions */
+button,
+input {
+  font-family: inherit;
+  font-size: 100%;
+  background: #ffffff;
+  border: 1px solid #000000;
+  box-sizing: border-box;
+  border-radius: 4px;
+  padding: 0.5rem 1rem;
+  transition: 500ms;
+}
+
+/* Subheading */
+h2 {
+  color: #2800ff;
+}
+
+/* Links that open files in the editor */
+.fileopener {
+  cursor: pointer;
+  font-weight: bold;
+  border-bottom: 3px solid var(--color-primary);
+  color: var(--color-secondary);
+}
+.fileopener:hover {
+  border-bottom: 3px solid var(--color-secondary);
+}
+
+.title {
+  color: #3c6997;
+  font-family: HK Grotesk;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 75px;
+  margin-top: 15px;
+  margin-bottom: 0;
+}
+
+.subheader {
+  color: #3c6997;
+  font-family: HK Grotesk;
+  font-style: italic;
+  font-weight: normal;
+  font-size: 25px;
+  margin-top: 0px;
+  margin-bottom: 0;
+}
+
+.center {
+  text-align: center;
+}
+
+.centered-image {
+  justify-content: center;
+}
+
+.link-container {
+  display: inline-block;
+  margin-right: 10px;
+  margin-left: 10px;
+}
